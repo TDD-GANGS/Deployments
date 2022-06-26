@@ -1,0 +1,227 @@
+/** @format */
+
+/*Font Importing*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&family=Poppins&family=Quicksand:wght@400;700&family=Raleway&family=Righteous&family=Roboto&family=Titillium+Web&family=Ubuntu&display=swap");
+
+/*Custom Scroll bar*/
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0014;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/*Buttons align center and background*/
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #111;
+}
+
+/*Button 1*/
+.btn {
+  /* font-family: "Open Sans"; */
+  font-family: "Quicksand";
+  width: 150px;
+  height: 50px;
+  font-size: 1rem;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.64);
+  border: 1px solid #000;
+  transition: 0.7s;
+}
+.btn:hover {
+  content: "Challenge #1";
+  transition: 0.7s;
+  /* background: #fff; */
+  border: 2px solid #fff;
+  padding: 2px;
+  letter-spacing: 4px;
+  cursor: pointer;
+  /* -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.64); */
+}
+
+/*Button 2*/
+.btn-2 {
+  margin-left: 1rem;
+  font-family: "Ubuntu";
+  width: 150px;
+  height: 50px;
+  font-size: 1rem;
+  background: rgb(0, 0, 0);
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.64);
+  border: 1px solid #000;
+  transition: 0.7s;
+}
+.btn-2:hover {
+  transition: 0.7s;
+  /* background: #fff; */
+  border: 2px solid #fff;
+  padding: 2px;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+.gradient {
+  font-weight: 900;
+  background: #121fcf;
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*Button 3*/
+.btn-3 {
+  margin-left: 1rem;
+  font-family: "Quicksand";
+  width: 150px;
+  height: 50px;
+  font-size: 1rem;
+  color: #fff;
+  background: #121fcf;
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.64);
+  border: 1px solid #000;
+  transition: 0.7s;
+}
+.btn-3:hover {
+  transition: 0.7s;
+  border: 2px solid #fff;
+  padding: 2px;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+
+/*Footer lol*/
+.footer {
+  position: absolute;
+  bottom: 1rem;
+  color: #fff;
+}
+.font-footer {
+  font-family: "Titillium Web";
+}
+/*Tootlip area not neecessary*/
+[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+[data-tooltip]:before,
+[data-tooltip]:after {
+  line-height: 1;
+  font-size: 0.9em;
+  pointer-events: none;
+  position: absolute;
+  box-sizing: border-box;
+  display: none;
+  opacity: 0;
+}
+[data-tooltip]:before {
+  content: "";
+  border: 5px solid transparent;
+  z-index: 100;
+}
+[data-tooltip]:after {
+  content: attr(data-tooltip);
+  text-align: center;
+  min-width: 3em;
+  max-width: 21em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 6px 8px;
+  border-radius: 3px;
+  background: #010214;
+  color: #ffffff;
+  z-index: 99;
+}
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  display: block;
+  opacity: 1;
+}
+[data-tooltip]:not([data-flow])::before,
+[data-tooltip][data-flow="top"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #010214;
+}
+[data-tooltip]:not([data-flow])::after,
+[data-tooltip][data-flow="top"]::after {
+  bottom: calc(100% + 5px);
+}
+[data-tooltip]:not([data-flow])::before,
+[tooltip]:not([data-flow])::after,
+[data-tooltip][data-flow="top"]::before,
+[data-tooltip][data-flow="top"]::after {
+  left: 50%;
+  -webkit-transform: translate(-50%, -4px);
+  transform: translate(-50%, -4px);
+}
+[data-tooltip][data-flow="bottom"]::before {
+  top: 100%;
+  border-top-width: 0;
+  border-bottom-color: #010214;
+}
+[data-tooltip][data-flow="bottom"]::after {
+  top: calc(100% + 5px);
+}
+[data-tooltip][data-flow="bottom"]::before,
+[data-tooltip][data-flow="bottom"]::after {
+  left: 50%;
+  -webkit-transform: translate(-50%, 8px);
+  transform: translate(-50%, 8px);
+}
+[data-tooltip][data-flow="left"]::before {
+  top: 50%;
+  border-right-width: 0;
+  border-left-color: #010214;
+  left: calc(0em - 5px);
+  -webkit-transform: translate(-8px, -50%);
+  transform: translate(-8px, -50%);
+}
+[data-tooltip][data-flow="left"]::after {
+  top: 50%;
+  right: calc(100% + 5px);
+  -webkit-transform: translate(-8px, -50%);
+  transform: translate(-8px, -50%);
+}
+[data-tooltip][data-flow="right"]::before {
+  top: 50%;
+  border-left-width: 0;
+  border-right-color: #010214;
+  right: calc(0em - 5px);
+  -webkit-transform: translate(8px, -50%);
+  transform: translate(8px, -50%);
+}
+[data-tooltip][data-flow="right"]::after {
+  top: 50%;
+  left: calc(100% + 5px);
+  -webkit-transform: translate(8px, -50%);
+  transform: translate(8px, -50%);
+}
+[data-tooltip=""]::after,
+[data-tooltip=""]::before {
+  display: none !important;
+}
+/*If your wondering what is this data thingy ,idk too its tootlip code is generated by cssportal.com*/
+/*The tootlip is the thing when it comes on the top and tells u about the info*/
+/*https://www.cssportal.com/css-tooltip-generator/  ,your welcome :)*/
