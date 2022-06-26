@@ -3,4 +3,4 @@
 -------- Under Next Gen Inside --------
 
 
-See them here : https://navashen.github.io/Buttons-1/
+See them here : https://navashen.github.io/buttons-1/
